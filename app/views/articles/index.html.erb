@@ -1,0 +1,20 @@
+<% title "Articles" %>
+<div class="toolbar">
+	<ul>
+		<li><%= link_to "Add a New Article", new_article_path %></li>
+	</ul>
+</div>
+<table>
+  <tr>
+    <th>Article Title</th>
+    <th></th>
+  </tr>
+  <% for article in @articles %>
+    <tr class="<%= cycle('rowA', 'rowB') %>">
+	  <td><strong><%=h link_to article.article_title, article %></strong><br />
+		  <em><%=h article.citation %></em>
+	  </td>
+      <td class="deletelink"><%= link_to "Delete", article, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>

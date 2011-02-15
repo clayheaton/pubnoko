@@ -1,0 +1,27 @@
+one:
+  pubmedlink: MyString
+  article_title: MyString
+  abstract: MyText
+  authors: MyString
+  affiliations: MyText
+  pubdate: 2011-02-15
+  pubmedid: 1
+  journal_id: 1
+  journal_volume: MyString
+  journal_issue: MyString
+  journal_pages: MyString
+  fetched: false
+
+two:
+  pubmedlink: MyString
+  article_title: MyString
+  abstract: MyText
+  authors: MyString
+  affiliations: MyText
+  pubdate: 2011-02-15
+  pubmedid: 1
+  journal_id: 1
+  journal_volume: MyString
+  journal_issue: MyString
+  journal_pages: MyString
+  fetched: false

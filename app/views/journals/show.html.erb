@@ -1,0 +1,24 @@
+<% title "Journal" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @journal.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @journal.description %>
+</p>
+<p>
+  <strong>Url:</strong>
+  <%= @journal.url %>
+</p>
+<p>
+  <strong>Short Name:</strong>
+  <%= @journal.short_name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_journal_path(@journal) %> |
+  <%= link_to "Destroy", @journal, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", journals_path %>
+</p>

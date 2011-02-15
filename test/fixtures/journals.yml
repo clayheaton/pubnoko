@@ -1,0 +1,11 @@
+one:
+  name: MyString
+  description: MyText
+  url: MyString
+  short_name: MyString
+
+two:
+  name: MyString
+  description: MyText
+  url: MyString
+  short_name: MyString

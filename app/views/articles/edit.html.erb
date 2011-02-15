@@ -1,0 +1,10 @@
+<% title "Edit Article" %>
+<div class="toolbar">
+<ul>
+  <li><%= link_to "View this Article", @article %></li>
+  <li><%= link_to "Cancel and View List of Articles", articles_path, :class => "deletelink" %></li>
+</ul>
+</div>
+<%= render :partial => 'form' %>
+
+

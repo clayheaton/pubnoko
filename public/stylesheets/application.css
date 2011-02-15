@@ -1,0 +1,636 @@
+a img {
+  border: none;
+}
+
+a  {
+	color: #0071BC; /* 4498c7 */
+	text-decoration: none;
+}
+a:hover, #example {
+   background-color: #0071BC;
+   color: white;
+   text-decoration: none;
+ }
+
+a.deletelink {color: #ED1C24;}
+a.deletelink:hover {
+   background-color: #ED1C24;
+   color: white;
+   text-decoration: none;
+}
+
+td.deletelink a {color: #ED1C24;}
+
+td.deletelink a:hover {
+   background-color: #ED1C24;
+   color: white;
+   text-decoration: none;
+}
+
+a:visited {color: #0071BC;}
+
+a:visited:hover {color:white;background-color:#0071BC;}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: disc;
+}
+
+tr.rowA {
+	background: #efefef;
+}
+
+tr.rowA:hover, tr.rowB:hover {
+	background: #cfcfcf;
+}
+
+tr .small_flag img {
+        margin-bottom: -4px;
+}
+
+/* h1 {
+	color: #ED1C24;
+} */
+/* FOR THE TOOLBAR AT THE TOP */
+.toolbar_top{
+	border:none;
+	border:0px;
+	margin:-40px -10px 10px -10px;
+	padding:0px;
+	font-weight:bold;
+	}
+.toolbar_top ul{
+	background:#333;
+	height:20px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+	.toolbar_top li{
+		float:left;
+		padding:0px;
+		}
+	.toolbar_top li a{
+		background:#333;
+		color:#fff;
+		display:block;
+		font-weight:normal;
+		line-height:20px;
+		margin:0px;
+		padding:0px 25px;
+		text-align:center;
+		text-decoration:none;
+		}
+		.toolbar_top li a:hover, .toolbar_top ul li:hover a{
+			background: #0071BC;
+			color:#FFFFFF;
+			text-decoration:none;
+			}
+		.toolbar_top li a.deletelink {
+			color: #ED1C24;
+		}
+		
+		.toolbar_top li a.deletelink:hover {
+			background: #ED1C24;
+		}
+	.toolbar_top li ul{
+		background:#333333;
+		display:none;
+		height:auto;
+		padding:0px;
+		margin:0px;
+		border:0px;
+		position:absolute;
+		width:225px;
+		z-index:200;
+		/*top:1em;
+		/*left:0;*/
+		}
+	.toolbar_top li:hover ul{
+		display:block;
+
+		}
+	.toolbar_top li li {
+		display:block;
+		float:none;
+		margin:0px;
+		padding:0px;
+		width:225px;
+		}
+	.toolbar_top li:hover li a{
+		background:none;
+
+		}
+	.toolbar_top li ul a{
+		display:block;
+		height:20px;
+		font-size:12px;
+		font-style:normal;
+		margin:0px;
+		padding:0px 10px 0px 15px;
+		text-align:left;
+		}
+		.toolbar_top li ul a:hover, .toolbar_top li ul li:hover a{
+			background:#2580a2;
+			border:0px;
+			color:#ffffff;
+			text-decoration:none;
+			}
+	.toolbar_top p{
+		clear:left;
+		}
+
+/* FOR THE TOOLBAR AT THE TOP */
+.toolbar{
+	border:none;
+	border:0px;
+	margin:-10px -10px 10px -10px;
+	padding:0px;
+	font-weight:bold;
+	}
+.toolbar ul{
+	background:#cfcfcf;
+	height:20px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+	.toolbar li{
+		float:left;
+		padding:0px;
+		}
+	.toolbar li a{
+		background:#cfcfcf;
+		color:#666;
+		display:block;
+		font-weight:normal;
+		line-height:20px;
+		margin:0px;
+		padding:0px 25px;
+		text-align:center;
+		text-decoration:none;
+		}
+		.toolbar li a:hover, .toolbar ul li:hover a{
+			background: #0071BC;
+			color:#FFFFFF;
+			text-decoration:none;
+			}
+		.toolbar li a.deletelink {
+			color: #ED1C24;
+		}
+		
+		.toolbar li a.deletelink:hover {
+			background: #ED1C24;
+		}
+	.toolbar li ul{
+		background:#333333;
+		display:none;
+		height:auto;
+		padding:0px;
+		margin:0px;
+		border:0px;
+		position:absolute;
+		width:225px;
+		z-index:200;
+		/*top:1em;
+		/*left:0;*/
+		}
+	.toolbar li:hover ul{
+		display:block;
+
+		}
+	.toolbar li li {
+		display:block;
+		float:none;
+		margin:0px;
+		padding:0px;
+		width:225px;
+		}
+	.toolbar li:hover li a{
+		background:none;
+
+		}
+	.toolbar li ul a{
+		display:block;
+		height:20px;
+		font-size:12px;
+		font-style:normal;
+		margin:0px;
+		padding:0px 10px 0px 15px;
+		text-align:left;
+		}
+		.toolbar li ul a:hover, .toolbar li ul li:hover a{
+			background:#2580a2;
+			border:0px;
+			color:#ffffff;
+			text-decoration:none;
+			}
+	.toolbar p{
+		clear:left;
+		}
+		
+/* FOR THE HOME PAGE TOOLBAR */
+.home-toolbar{
+	border:none;
+	border:0px;
+	margin:-10px -10px 10px -10px;
+	padding:0px;
+	font-weight:bold;
+	}
+.home-toolbar ul{
+	background:#0071BC;
+	height:20px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+	.home-toolbar li{
+		float:left;
+		padding:0px;
+		}
+	.home-toolbar li a{
+		background:#0071BC;
+		color:white;
+		display:block;
+		font-weight:normal;
+		line-height:20px;
+		margin:0px;
+		padding:0px 25px;
+		text-align:center;
+		text-decoration:none;
+		}
+		.home-toolbar li a:hover, .home-toolbar ul li:hover a{
+			background: #ED1C24;
+			color:white;
+			text-decoration:none;
+			}
+		
+		.home-toolbar li a.deletelink {
+			color: #ED1C24;
+		}
+		
+		.home-toolbar li a.deletelink:hover {
+			background: #ED1C24;
+		}
+	.home-toolbar li ul{
+		background:#333333;
+		display:none;
+		height:auto;
+		padding:0px;
+		margin:0px;
+		border:0px;
+		position:absolute;
+		width:225px;
+		z-index:200;
+		/*top:1em;
+		/*left:0;*/
+		}
+	.home-toolbar li:hover ul{
+		display:block;
+
+		}
+	.home-toolbar li li {
+		display:block;
+		float:none;
+		margin:0px;
+		padding:0px;
+		width:225px;
+		}
+	.home-toolbar li:hover li a{
+		background:none;
+
+		}
+	.home-toolbar li ul a{
+		display:block;
+		height:20px;
+		font-size:12px;
+		font-style:normal;
+		margin:0px;
+		padding:0px 10px 0px 15px;
+		text-align:left;
+		}
+		.home-toolbar li ul a:hover, .home-toolbar li ul li:hover a{
+			background:#2580a2;
+			border:0px;
+			color:#ffffff;
+			text-decoration:none;
+			}
+	.home-toolbar p{
+		clear:left;
+		}
+		
+/* Look here for an IE Solution (not yet implemented): http://jonraasch.com/blog/css-rounded-corners-in-all-browsers */
+
+body#home a#homenav,
+body#blog a#blognav,
+body#about a#aboutnav,
+body#contact a#contactnav {
+	background:#0090EF;
+	font-weight:normal;
+/*	padding-top:8px;
+	margin-top:-8px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topright:10px;
+	-moz-border-radius-topleft:10px; */
+}
+		
+/* THE IMAGE AT THE TOP */
+		
+.post-top img {
+	z-index:1;
+	opacity:1.0;
+}
+
+.post-top h3 {
+	display:block;
+	position:relative;
+	margin-top:-32px;
+	padding: 3px;
+	padding-left: 40px;
+	color:white;
+	background-color:#333;
+	opacity:0.8;
+	z-index:2;
+}
+
+.lesser-title h4 {
+	display:block;
+	position:relative;
+	margin-top:-28px;
+	padding: 3px;
+	color:white;
+	background-color:#333;
+	opacity:0.8;
+	z-index:2;
+}
+
+.meta {
+	margin-top:-12px;
+}
+
+.meta img {
+	margin-bottom:-3px;
+}
+.bio {
+}
+.test {
+	background-color:#333;
+}
+
+.flag-loc img {
+	margin-bottom:-3px;
+}
+
+.headimage img {
+	margin-top: -47px;
+	margin-left: 2px;
+	display:block;
+	position:relative;
+	opacity:1.0;
+	z-index:3;
+}
+.pop_table {
+	width: 45%;
+	float:left;
+}
+
+.state_money {
+	width:45%;
+	float:left;
+	clear:both;
+}
+
+table.state_money_table thead tr th, table.statetotal tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 9pt;
+	padding: 4px;
+}
+
+.pop_pyramid_state {
+	margin:20px 0 0 20px;
+}
+
+.pop_pyramid_dma_left {
+	margin:0 50px 30px 30px;
+	float:left;
+	clear:left;
+}
+.pop_pyramid_dma_right {
+	margin:0 80px 30px 0;
+	float:right;
+	clear:right;
+}
+
+.dma_pop_pyramids {
+	width:100%;
+	height:1450px;
+}
+
+.dma_float_left {
+	float:left;
+	width:49%;
+}
+.dma_float_right {
+	float:right;
+	width:49%;
+}
+
+.pop_pyramid_county {
+	float:right;
+	clear:right;
+	margin:0 50px 50px 0;
+}
+
+.source {
+	font-size:8pt;
+	color:#666;
+}
+
+.sample_size {
+	font-family:courier;
+	padding:5px;
+	background-color:#e6EEEE;
+}
+
+.citation {
+	margin-top: -10px;
+	margin-bottom:5px;
+	font-size:8pt;
+	color:#555;
+}
+
+.statemap {
+	width:500px;
+	height:685px;
+	float:right;
+}
+
+.statemap img {
+	display:inline;
+	vertical-align:middle;
+}
+
+.homepage {
+	text-align:center;
+}
+
+.homepage h2 {
+	color:#0071BC;
+	margin-top:75px;
+}
+
+.homepage h3 {
+	font-size:11pt;
+}
+
+.homepage .source {
+	margin-bottom:35px;
+}
+
+.thefooter {
+	text-align:center;
+	font-size:10pt;
+	color:#666;
+	clear:both;
+	margin-bottom:20px;
+}
+
+.thefooter img {
+	margin-bottom:-8px;
+}
+
+.cleardiv {
+	margin:5px 0 5px 0;
+	clear:both;
+}
+
+#state_income_chart {
+	float:left;
+}
+
+#state_pop_chart {
+	float:right;
+}
+
+.buttonholder a:visited {
+	color: #ffffff;
+}
+
+.homebutton {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 8px 16px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.homebutton:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #cccccc;
+   }
+.homebutton:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+.journaltable img {
+	margin-bottom:-3px;
+}
+
+.county_pop_table {
+	width: 50%;
+	float:left;
+}
+
+#user_nav {
+	float:right;
+	font-family:courier;
+}
+#example {
+   background-color: #0071BC;
+   color: white;
+   text-decoration: none;
+   display:inline;
+ }
+
+#deleteexample {
+   background-color: #ED1C24;
+   color: white;
+   text-decoration: none;
+}
+
+#exampletable {
+	width:60%;
+}
+
+#examplelink {
+	font-family:courier;
+}

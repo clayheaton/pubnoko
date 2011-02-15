@@ -1,0 +1,21 @@
+<% title "Journals" %>
+<div class="toolbar">
+	<ul>
+		<li><%= link_to "Add a New Journal", new_journal_path %></li>
+	</ul>
+</div>
+<div class="journaltable">
+<table>
+  <tr>
+    <th>Journal Name</th>
+    <th>URL</th>
+  </tr>
+  <% for journal in @journals %>
+    <tr class="<%= cycle('rowA', 'rowB') %>">
+      <td><%= link_to journal.name, journal %> <%=h "(" + journal.short_name + ")" if !journal.short_name.nil? && journal.short_name.length > 0 %></td>
+      <td><%= link_to journal.url, journal.url if !journal.url.nil? && journal.url.length > 0 %></td>
+      <td><%= link_to "Edit", edit_journal_path(journal) %></td>
+    </tr>
+  <% end %>
+</table>
+</div>

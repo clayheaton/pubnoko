@@ -1,0 +1,26 @@
+<% title "Article" %>
+<div class="toolbar">
+	<ul>
+		  <li><%= link_to "Add a New Article", new_article_path %></li>
+		  <li><%= link_to "Edit This Article", edit_article_path(@article) %></li>
+		  <li><%= link_to "View List of Articles", articles_path %></li>
+		  <li><%= link_to "Delete this Article", @article, :confirm => 'Are you sure?', :method => :delete, :class => "deletelink" %></li>
+	</ul>
+</div>
+<%= @article.citation %>
+  <h3><%=h @article.article_title %></h3>
+  <div class="citation"><%=h @article.authors %><br />
+<%=h @article.affiliations %></div>
+
+<p>
+  <strong>Abstract:</strong><br />
+  <%=h @article.abstract %>
+</p>
+<%- if @article.pubmedlink != nil && @article.pubmedlink.length > 0 -%>
+	<p>
+	  <strong>PubMed Link:</strong><br />
+	  <%=h link_to @article.pubmedlink, @article.pubmedlink %>
+	</p>
+<%- end -%>
+
+

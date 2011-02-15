@@ -1,0 +1,62 @@
+<%= form_for @article, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+
+  <br />
+  <p>
+  	<h3>Enter a link to an abstract on PubMed and click Submit or fill out the information below</h3>
+  	<p>The link must be of the type that has the PubMed ID at the end, for example:<br />
+  	    http://www.ncbi.nlm.nih.gov/pubmed/21318145</p>
+  </p>
+
+  <p>
+    <%= f.label :pubmedlink, "PubMed Link" %><br />
+    <%= f.text_field :pubmedlink, :size => 85 %>
+  </p>
+  <p>
+    <%= f.label :fetched, "Uncheck this box to requery PubMed (for editing)  " %><%= f.check_box :fetched %>
+  </p>
+  <p><%= submit_tag "Pull Data from PubMed" %></p>
+
+<hr />
+  <p>
+    <%= f.label :article_title %><br />
+    <%= f.text_field :article_title, :size => 141 %>
+  </p>
+  <p>
+    <%= f.label :abstract %><br />
+    <%= f.text_area :abstract, :size => "100x15" %>
+  </p>
+  <p>
+    <%= f.label :authors %><br />
+    <%= f.text_field :authors, :size => 85 %>
+  </p>
+  <p>
+    <%= f.label :affiliations %><br />
+    <%= f.text_area :affiliations, :size => "60x3" %>
+  </p>
+  <p>
+    <%= f.label :pubdate, "Publication Date" %><br />
+    <%= f.date_select :pubdate %>
+  </p>
+  <p>
+    <%= f.label :pubmedid, "PubMed ID" %><br />
+    <%= f.text_field :pubmedid %>
+  </p>
+  <p>
+    <%= f.label :journal_id %><br />
+    <%= f.collection_select :journal_id, @journals, :id, :name, :prompt => "Select a journal" %>
+  </p>
+  <p>
+    <%= f.label :journal_volume %><br />
+    <%= f.text_field :journal_volume %>
+  </p>
+  <p>
+    <%= f.label :journal_issue %><br />
+    <%= f.text_field :journal_issue %>
+  </p>
+  <p>
+    <%= f.label :journal_pages %><br />
+    <%= f.text_field :journal_pages %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
