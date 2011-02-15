@@ -1,0 +1,4 @@
+Example of using Nokogiri to parse PubMed XML. Requires Rails 3.0.4 and Nokogiri 1.4.4.
+
+Migrate the database and run the app. Enter PubMed URLs that have the Pubmed ID at the end, such as:
+http://www.ncbi.nlm.nih.gov/pubmed/21317303
